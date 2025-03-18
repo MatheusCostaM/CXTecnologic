@@ -3,12 +3,17 @@ import styled from "styled-components";
 
 const MoveSimple = styled.div`
 
+    height: 100% ;
+
+    img{
+        height: 100% ;
+    }
+
 & > * {
     /* transição para a escala */
     transition: transform 0.7s ease-in-out;
-
     /* Mudança de escala */
-    transform: scale(${({ $isMove }) => ($isMove ? 1 : 1.1)});
+    transform: scale(${({ $isMove }) => ($isMove ? 0.95 : 1)});
 }
 `
 

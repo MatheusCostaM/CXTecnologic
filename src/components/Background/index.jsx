@@ -5,8 +5,8 @@ import Neon from "../Neon";
 
 const Background = styled.div`
   display: flex;
-  height: 100vh;
-  width: 100vw;
+  height: 90vh;
+  width: 90vw;
   position: fixed;
   object-fit: contain;
   justify-content: end; 

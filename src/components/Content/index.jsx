@@ -1,0 +1,98 @@
+import React from 'react'
+import styled from 'styled-components'
+import icone from '/icone.png'
+import MoveSimple from '../MoveSimple'
+
+const Content = styled.div`
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+
+    h1, h2 {
+        margin: 0;
+        padding: 0;
+        color: #8400ff;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra do texto */
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+`;
+
+const Sections = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 30vh;
+`;
+
+const Button = styled.a`
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8rem;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 250px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Sombra nos botões */
+
+    &:hover {
+        opacity: 0.8;
+        color: aliceblue;
+    }
+`;
+
+const WhatsappButton = styled(Button)`
+    background-color: #25D366;
+    color: white;
+`;
+
+const EmailButton = styled(Button)`
+    background-color: #0078D4;
+    color: white;
+`;
+
+export default () => {
+    return (
+        <Content>
+            <Sections>
+                <h1>VOCÊ PRECISA DE UM SITE</h1>
+                <h2>Um site para você se tornar mais</h2>
+                <h1>PROFISSIONAL</h1>
+            </Sections>
+            <Sections>
+                <MoveSimple>
+                    <img src={icone} alt="" />
+                </MoveSimple>
+            </Sections>
+            <Sections>
+                <h2>Faça um orçamento agora!</h2>
+                <MoveSimple>
+                    <WhatsappButton href="https://wa.me/5511947047934" target="_blank">
+                        WHATSAPP
+                    </WhatsappButton>
+                </MoveSimple>
+                <MoveSimple>
+                    <EmailButton href="mailto:cxtecnologic@outlook.com" target="_blank">
+                        E-MAIL
+                    </EmailButton>
+                </MoveSimple>
+            </Sections>
+        </Content>
+    )
+}
