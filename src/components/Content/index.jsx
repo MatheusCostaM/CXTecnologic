@@ -27,6 +27,16 @@ const Content = styled.div`
     h2 {
         font-size: 1.5rem;
     }
+
+    @media only screen and (max-width: 600px) {
+        h1 {
+            font-size: 1.5rem; /* Ajuste o tamanho da fonte do título */
+        }
+
+        h2 {
+            font-size: 1.1rem; /* Ajuste o tamanho da fonte do subtítulo */
+        }
+    }
 `;
 
 const Sections = styled.div`
