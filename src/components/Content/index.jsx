@@ -4,8 +4,7 @@ import icone from '/icone.png'
 import MoveSimple from '../MoveSimple'
 
 const Content = styled.div`
-    width: 100vw;
-    height: 90vh;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -46,6 +45,15 @@ const Sections = styled.div`
     align-items: center;
     width: 100%;
     max-height: 30vh;
+    margin: 3.5vh;
+    img {
+        height: 35vh;
+    }
+    a img{
+        height: 20vh;
+        margin: 2vh;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    }
 `;
 
 const Button = styled.a`
@@ -102,6 +110,13 @@ export default () => {
                         E-MAIL
                     </EmailButton>
                 </MoveSimple>
+            </Sections>
+            <Sections>
+                <h1>PROJETOS REALIZADOS</h1>
+            </Sections>
+            <Sections>
+                <h2>DocesByVic</h2>
+                <a href="https://docesbyvic.vercel.app/" target="_blank"><img src="/docesbyvic.png" alt="" /></a>
             </Sections>
         </Content>
     )
