@@ -4,7 +4,7 @@ import icone from '/icone.png'
 import MoveSimple from '../MoveSimple'
 
 const Content = styled.div`
-    width: 90vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -45,7 +45,7 @@ const Sections = styled.div`
     align-items: center;
     width: 100%;
     max-height: 30vh;
-    margin: 3.5vh;
+    margin: 3.5vh 0;
     img {
         height: 35vh;
     }
@@ -53,6 +53,10 @@ const Sections = styled.div`
         height: 20vh;
         margin: 2vh;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    @media only screen and (max-width: 600px) {
+        margin: 4.5vh 0;
     }
 `;
 
